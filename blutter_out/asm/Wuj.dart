@@ -1,0 +1,21 @@
+// lib: TCj, url: Wuj
+
+// class id: 1049965, size: 0x8
+class :: {
+}
+
+// class id: 595, size: 0xc, field offset: 0xc
+class NZa extends nYa {
+
+  static late final Uab DDf; // offset: 0xee8
+
+  [closure] static NZa <anonymous closure>(dynamic) {
+    // ** addr: 0x6ce4e8, size: -0x1
+  }
+  [closure] static NZa _WHf(dynamic, String, kYa, jYa, za, za, List<int>) {
+    // ** addr: 0x6ce600, size: -0x1
+  }
+  static Uab DDf() {
+    // ** addr: 0x6ce490, size: -0x1
+  }
+}

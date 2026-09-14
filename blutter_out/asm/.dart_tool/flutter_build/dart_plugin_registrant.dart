@@ -1,278 +1,185 @@
-// lib: , url: file:///C:/WorkSpace/qingman_flutter/.dart_tool/flutter_build/dart_plugin_registrant.dart
+// lib: , url: file:///Users/share/manga/.dart_tool/flutter_build/dart_plugin_registrant.dart
 
-// class id: 1048597, size: 0x8
+// class id: 1048593, size: 0x8
 class :: {
 }
 
-// class id: 3589, size: 0x8, field offset: 0x8
+// class id: 4693, size: 0x8, field offset: 0x8
 class _PluginRegistrant extends Object {
 
   static void register() {
-    // ** addr: 0xbb6d14, size: 0x2a4
-    // 0xbb6d14: EnterFrame
-    //     0xbb6d14: stp             fp, lr, [SP, #-0x10]!
-    //     0xbb6d18: mov             fp, SP
-    // 0xbb6d1c: AllocStack(0x48)
-    //     0xbb6d1c: sub             SP, SP, #0x48
-    // 0xbb6d20: CheckStackOverflow
-    //     0xbb6d20: ldr             x16, [THR, #0x48]  ; THR::stack_limit
-    //     0xbb6d24: cmp             SP, x16
-    //     0xbb6d28: b.ls            #0xbb6fb0
-    // 0xbb6d2c: r0 = call 0xa8ac94
-    //     0xbb6d2c: bl              #0xa8ac94
-    // 0xbb6d30: r0 = Null
-    //     0xbb6d30: mov             x0, NULL
-    // 0xbb6d34: b               #0xbb6d78
-    // 0xbb6d38: sub             SP, fp, #0x48
-    // 0xbb6d3c: stur            x0, [fp, #-0x40]
-    // 0xbb6d40: r1 = Null
-    //     0xbb6d40: mov             x1, NULL
-    // 0xbb6d44: r2 = 6
-    //     0xbb6d44: movz            x2, #0x6
-    // 0xbb6d48: r0 = AllocateArray()
-    //     0xbb6d48: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6d4c: r16 = "`file_selector_android` threw an error: "
-    //     0xbb6d4c: ldr             x16, [PP, #0x58]  ; [pp+0x58] "`file_selector_android` threw an error: "
-    // 0xbb6d50: StoreField: r0->field_f = r16
-    //     0xbb6d50: stur            w16, [x0, #0xf]
-    // 0xbb6d54: ldur            x1, [fp, #-0x40]
-    // 0xbb6d58: StoreField: r0->field_13 = r1
-    //     0xbb6d58: stur            w1, [x0, #0x13]
-    // 0xbb6d5c: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6d5c: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6d60: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6d60: stur            w16, [x0, #0x17]
-    // 0xbb6d64: str             x0, [SP]
-    // 0xbb6d68: r0 = _interpolate()
-    //     0xbb6d68: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6d6c: mov             x1, x0
-    // 0xbb6d70: r0 = call 0x44e81c
-    //     0xbb6d70: bl              #0x44e81c
-    // 0xbb6d74: ldur            x0, [fp, #-0x40]
-    // 0xbb6d78: stur            x0, [fp, #-0x40]
-    // 0xbb6d7c: r0 = call 0xa8abf8
-    //     0xbb6d7c: bl              #0xa8abf8
-    // 0xbb6d80: ldur            x0, [fp, #-0x40]
-    // 0xbb6d84: b               #0xbb6dc8
-    // 0xbb6d88: sub             SP, fp, #0x48
-    // 0xbb6d8c: stur            x0, [fp, #-0x40]
-    // 0xbb6d90: r1 = Null
-    //     0xbb6d90: mov             x1, NULL
-    // 0xbb6d94: r2 = 6
-    //     0xbb6d94: movz            x2, #0x6
-    // 0xbb6d98: r0 = AllocateArray()
-    //     0xbb6d98: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6d9c: r16 = "`flutter_image_compress_common` threw an error: "
-    //     0xbb6d9c: ldr             x16, [PP, #0x68]  ; [pp+0x68] "`flutter_image_compress_common` threw an error: "
-    // 0xbb6da0: StoreField: r0->field_f = r16
-    //     0xbb6da0: stur            w16, [x0, #0xf]
-    // 0xbb6da4: ldur            x1, [fp, #-0x40]
-    // 0xbb6da8: StoreField: r0->field_13 = r1
-    //     0xbb6da8: stur            w1, [x0, #0x13]
-    // 0xbb6dac: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6dac: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6db0: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6db0: stur            w16, [x0, #0x17]
-    // 0xbb6db4: str             x0, [SP]
-    // 0xbb6db8: r0 = _interpolate()
-    //     0xbb6db8: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6dbc: mov             x1, x0
-    // 0xbb6dc0: r0 = call 0x44e81c
-    //     0xbb6dc0: bl              #0x44e81c
-    // 0xbb6dc4: ldur            x0, [fp, #-0x40]
-    // 0xbb6dc8: stur            x0, [fp, #-0x40]
-    // 0xbb6dcc: r0 = call 0xa8aae4
-    //     0xbb6dcc: bl              #0xa8aae4
-    // 0xbb6dd0: ldur            x0, [fp, #-0x40]
-    // 0xbb6dd4: b               #0xbb6e18
-    // 0xbb6dd8: sub             SP, fp, #0x48
-    // 0xbb6ddc: stur            x0, [fp, #-0x40]
-    // 0xbb6de0: r1 = Null
-    //     0xbb6de0: mov             x1, NULL
-    // 0xbb6de4: r2 = 6
-    //     0xbb6de4: movz            x2, #0x6
-    // 0xbb6de8: r0 = AllocateArray()
-    //     0xbb6de8: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6dec: r16 = "`path_provider_android` threw an error: "
-    //     0xbb6dec: ldr             x16, [PP, #0x70]  ; [pp+0x70] "`path_provider_android` threw an error: "
-    // 0xbb6df0: StoreField: r0->field_f = r16
-    //     0xbb6df0: stur            w16, [x0, #0xf]
-    // 0xbb6df4: ldur            x1, [fp, #-0x40]
-    // 0xbb6df8: StoreField: r0->field_13 = r1
-    //     0xbb6df8: stur            w1, [x0, #0x13]
-    // 0xbb6dfc: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6dfc: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6e00: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6e00: stur            w16, [x0, #0x17]
-    // 0xbb6e04: str             x0, [SP]
-    // 0xbb6e08: r0 = _interpolate()
-    //     0xbb6e08: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6e0c: mov             x1, x0
-    // 0xbb6e10: r0 = call 0x44e81c
-    //     0xbb6e10: bl              #0x44e81c
-    // 0xbb6e14: ldur            x0, [fp, #-0x40]
-    // 0xbb6e18: stur            x0, [fp, #-0x40]
-    // 0xbb6e1c: r0 = call 0xa8a8e4
-    //     0xbb6e1c: bl              #0xa8a8e4
-    // 0xbb6e20: ldur            x0, [fp, #-0x40]
-    // 0xbb6e24: b               #0xbb6e68
-    // 0xbb6e28: sub             SP, fp, #0x48
-    // 0xbb6e2c: stur            x0, [fp, #-0x40]
-    // 0xbb6e30: r1 = Null
-    //     0xbb6e30: mov             x1, NULL
-    // 0xbb6e34: r2 = 6
-    //     0xbb6e34: movz            x2, #0x6
-    // 0xbb6e38: r0 = AllocateArray()
-    //     0xbb6e38: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6e3c: r16 = "`shared_preferences_android` threw an error: "
-    //     0xbb6e3c: ldr             x16, [PP, #0x78]  ; [pp+0x78] "`shared_preferences_android` threw an error: "
-    // 0xbb6e40: StoreField: r0->field_f = r16
-    //     0xbb6e40: stur            w16, [x0, #0xf]
-    // 0xbb6e44: ldur            x1, [fp, #-0x40]
-    // 0xbb6e48: StoreField: r0->field_13 = r1
-    //     0xbb6e48: stur            w1, [x0, #0x13]
-    // 0xbb6e4c: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6e4c: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6e50: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6e50: stur            w16, [x0, #0x17]
-    // 0xbb6e54: str             x0, [SP]
-    // 0xbb6e58: r0 = _interpolate()
-    //     0xbb6e58: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6e5c: mov             x1, x0
-    // 0xbb6e60: r0 = call 0x44e81c
-    //     0xbb6e60: bl              #0x44e81c
-    // 0xbb6e64: ldur            x0, [fp, #-0x40]
-    // 0xbb6e68: stur            x0, [fp, #-0x40]
-    // 0xbb6e6c: r0 = call 0xa8a7e8
-    //     0xbb6e6c: bl              #0xa8a7e8
-    // 0xbb6e70: ldur            x0, [fp, #-0x40]
-    // 0xbb6e74: b               #0xbb6eb8
-    // 0xbb6e78: sub             SP, fp, #0x48
-    // 0xbb6e7c: stur            x0, [fp, #-0x40]
-    // 0xbb6e80: r1 = Null
-    //     0xbb6e80: mov             x1, NULL
-    // 0xbb6e84: r2 = 6
-    //     0xbb6e84: movz            x2, #0x6
-    // 0xbb6e88: r0 = AllocateArray()
-    //     0xbb6e88: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6e8c: r16 = "`sqflite_android` threw an error: "
-    //     0xbb6e8c: ldr             x16, [PP, #0x80]  ; [pp+0x80] "`sqflite_android` threw an error: "
-    // 0xbb6e90: StoreField: r0->field_f = r16
-    //     0xbb6e90: stur            w16, [x0, #0xf]
-    // 0xbb6e94: ldur            x1, [fp, #-0x40]
-    // 0xbb6e98: StoreField: r0->field_13 = r1
-    //     0xbb6e98: stur            w1, [x0, #0x13]
-    // 0xbb6e9c: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6e9c: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6ea0: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6ea0: stur            w16, [x0, #0x17]
-    // 0xbb6ea4: str             x0, [SP]
-    // 0xbb6ea8: r0 = _interpolate()
-    //     0xbb6ea8: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6eac: mov             x1, x0
-    // 0xbb6eb0: r0 = call 0x44e81c
-    //     0xbb6eb0: bl              #0x44e81c
-    // 0xbb6eb4: ldur            x0, [fp, #-0x40]
-    // 0xbb6eb8: stur            x0, [fp, #-0x40]
-    // 0xbb6ebc: r0 = call 0xa8a6d4
-    //     0xbb6ebc: bl              #0xa8a6d4
-    // 0xbb6ec0: ldur            x0, [fp, #-0x40]
-    // 0xbb6ec4: b               #0xbb6f08
-    // 0xbb6ec8: sub             SP, fp, #0x48
-    // 0xbb6ecc: stur            x0, [fp, #-0x40]
-    // 0xbb6ed0: r1 = Null
-    //     0xbb6ed0: mov             x1, NULL
-    // 0xbb6ed4: r2 = 6
-    //     0xbb6ed4: movz            x2, #0x6
-    // 0xbb6ed8: r0 = AllocateArray()
-    //     0xbb6ed8: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6edc: r16 = "`url_launcher_android` threw an error: "
-    //     0xbb6edc: ldr             x16, [PP, #0x88]  ; [pp+0x88] "`url_launcher_android` threw an error: "
-    // 0xbb6ee0: StoreField: r0->field_f = r16
-    //     0xbb6ee0: stur            w16, [x0, #0xf]
-    // 0xbb6ee4: ldur            x1, [fp, #-0x40]
-    // 0xbb6ee8: StoreField: r0->field_13 = r1
-    //     0xbb6ee8: stur            w1, [x0, #0x13]
-    // 0xbb6eec: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6eec: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6ef0: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6ef0: stur            w16, [x0, #0x17]
-    // 0xbb6ef4: str             x0, [SP]
-    // 0xbb6ef8: r0 = _interpolate()
-    //     0xbb6ef8: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6efc: mov             x1, x0
-    // 0xbb6f00: r0 = call 0x44e81c
-    //     0xbb6f00: bl              #0x44e81c
-    // 0xbb6f04: ldur            x0, [fp, #-0x40]
-    // 0xbb6f08: stur            x0, [fp, #-0x40]
-    // 0xbb6f0c: r0 = call 0xa8a4a4
-    //     0xbb6f0c: bl              #0xa8a4a4
-    // 0xbb6f10: ldur            x0, [fp, #-0x40]
-    // 0xbb6f14: b               #0xbb6f58
-    // 0xbb6f18: sub             SP, fp, #0x48
-    // 0xbb6f1c: stur            x0, [fp, #-0x40]
-    // 0xbb6f20: r1 = Null
-    //     0xbb6f20: mov             x1, NULL
-    // 0xbb6f24: r2 = 6
-    //     0xbb6f24: movz            x2, #0x6
-    // 0xbb6f28: r0 = AllocateArray()
-    //     0xbb6f28: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6f2c: r16 = "`video_player_android` threw an error: "
-    //     0xbb6f2c: ldr             x16, [PP, #0x90]  ; [pp+0x90] "`video_player_android` threw an error: "
-    // 0xbb6f30: StoreField: r0->field_f = r16
-    //     0xbb6f30: stur            w16, [x0, #0xf]
-    // 0xbb6f34: ldur            x1, [fp, #-0x40]
-    // 0xbb6f38: StoreField: r0->field_13 = r1
-    //     0xbb6f38: stur            w1, [x0, #0x13]
-    // 0xbb6f3c: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6f3c: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6f40: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6f40: stur            w16, [x0, #0x17]
-    // 0xbb6f44: str             x0, [SP]
-    // 0xbb6f48: r0 = _interpolate()
-    //     0xbb6f48: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6f4c: mov             x1, x0
-    // 0xbb6f50: r0 = call 0x44e81c
-    //     0xbb6f50: bl              #0x44e81c
-    // 0xbb6f54: ldur            x0, [fp, #-0x40]
-    // 0xbb6f58: stur            x0, [fp, #-0x40]
-    // 0xbb6f5c: r0 = call 0xa8a3ac
-    //     0xbb6f5c: bl              #0xa8a3ac
-    // 0xbb6f60: b               #0xbb6fa0
-    // 0xbb6f64: sub             SP, fp, #0x48
-    // 0xbb6f68: stur            x0, [fp, #-0x40]
-    // 0xbb6f6c: r1 = Null
-    //     0xbb6f6c: mov             x1, NULL
-    // 0xbb6f70: r2 = 6
-    //     0xbb6f70: movz            x2, #0x6
-    // 0xbb6f74: r0 = AllocateArray()
-    //     0xbb6f74: bl              #0xbb5f20  ; AllocateArrayStub
-    // 0xbb6f78: r16 = "`webview_flutter_android` threw an error: "
-    //     0xbb6f78: ldr             x16, [PP, #0x98]  ; [pp+0x98] "`webview_flutter_android` threw an error: "
-    // 0xbb6f7c: StoreField: r0->field_f = r16
-    //     0xbb6f7c: stur            w16, [x0, #0xf]
-    // 0xbb6f80: ldur            x1, [fp, #-0x40]
-    // 0xbb6f84: StoreField: r0->field_13 = r1
-    //     0xbb6f84: stur            w1, [x0, #0x13]
-    // 0xbb6f88: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    //     0xbb6f88: ldr             x16, [PP, #0x60]  ; [pp+0x60] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
-    // 0xbb6f8c: ArrayStore: r0[0] = r16  ; List_4
-    //     0xbb6f8c: stur            w16, [x0, #0x17]
-    // 0xbb6f90: str             x0, [SP]
-    // 0xbb6f94: r0 = _interpolate()
-    //     0xbb6f94: bl              #0x31a628  ; [dart:core] _StringBase::_interpolate
-    // 0xbb6f98: mov             x1, x0
-    // 0xbb6f9c: r0 = call 0x44e81c
-    //     0xbb6f9c: bl              #0x44e81c
-    // 0xbb6fa0: r0 = Null
-    //     0xbb6fa0: mov             x0, NULL
-    // 0xbb6fa4: LeaveFrame
-    //     0xbb6fa4: mov             SP, fp
-    //     0xbb6fa8: ldp             fp, lr, [SP], #0x10
-    // 0xbb6fac: ret
-    //     0xbb6fac: ret             
-    // 0xbb6fb0: r0 = StackOverflowSharedWithoutFPURegs()
-    //     0xbb6fb0: bl              #0xbb602c  ; StackOverflowSharedWithoutFPURegsStub
-    // 0xbb6fb4: b               #0xbb6d2c
+    // ** addr: 0x81415c, size: 0x1b4
+    // 0x81415c: EnterFrame
+    //     0x81415c: stp             fp, lr, [SP, #-0x10]!
+    //     0x814160: mov             fp, SP
+    // 0x814164: AllocStack(0x38)
+    //     0x814164: sub             SP, SP, #0x38
+    // 0x814168: CheckStackOverflow
+    //     0x814168: ldr             x16, [THR, #0x38]  ; THR::stack_limit
+    //     0x81416c: cmp             SP, x16
+    //     0x814170: b.ls            #0x814308
+    // 0x814174: r0 = call 0x777a84
+    //     0x814174: bl              #0x777a84
+    // 0x814178: r0 = Null
+    //     0x814178: mov             x0, NULL
+    // 0x81417c: b               #0x8141c0
+    // 0x814180: sub             SP, fp, #0x38
+    // 0x814184: stur            x0, [fp, #-0x30]
+    // 0x814188: r1 = Null
+    //     0x814188: mov             x1, NULL
+    // 0x81418c: r2 = 6
+    //     0x81418c: movz            x2, #0x6
+    // 0x814190: r0 = AllocateArray()
+    //     0x814190: bl              #0x8130e8  ; AllocateArrayStub
+    // 0x814194: r16 = "`flutter_inappwebview_android` threw an error: "
+    //     0x814194: ldr             x16, [PP, #0x70]  ; [pp+0x70] "`flutter_inappwebview_android` threw an error: "
+    // 0x814198: StoreField: r0->field_f = r16
+    //     0x814198: stur            w16, [x0, #0xf]
+    // 0x81419c: ldur            x1, [fp, #-0x30]
+    // 0x8141a0: StoreField: r0->field_13 = r1
+    //     0x8141a0: stur            w1, [x0, #0x13]
+    // 0x8141a4: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    //     0x8141a4: ldr             x16, [PP, #0x78]  ; [pp+0x78] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    // 0x8141a8: ArrayStore: r0[0] = r16  ; List_4
+    //     0x8141a8: stur            w16, [x0, #0x17]
+    // 0x8141ac: str             x0, [SP]
+    // 0x8141b0: r0 = _interpolate()
+    //     0x8141b0: bl              #0x238b48  ; [dart:core] _StringBase::_interpolate
+    // 0x8141b4: mov             x1, x0
+    // 0x8141b8: r0 = call 0x2a9c7c
+    //     0x8141b8: bl              #0x2a9c7c
+    // 0x8141bc: ldur            x0, [fp, #-0x30]
+    // 0x8141c0: stur            x0, [fp, #-0x30]
+    // 0x8141c4: r0 = call 0x777970
+    //     0x8141c4: bl              #0x777970
+    // 0x8141c8: ldur            x0, [fp, #-0x30]
+    // 0x8141cc: b               #0x814210
+    // 0x8141d0: sub             SP, fp, #0x38
+    // 0x8141d4: stur            x0, [fp, #-0x30]
+    // 0x8141d8: r1 = Null
+    //     0x8141d8: mov             x1, NULL
+    // 0x8141dc: r2 = 6
+    //     0x8141dc: movz            x2, #0x6
+    // 0x8141e0: r0 = AllocateArray()
+    //     0x8141e0: bl              #0x8130e8  ; AllocateArrayStub
+    // 0x8141e4: r16 = "`path_provider_android` threw an error: "
+    //     0x8141e4: ldr             x16, [PP, #0x80]  ; [pp+0x80] "`path_provider_android` threw an error: "
+    // 0x8141e8: StoreField: r0->field_f = r16
+    //     0x8141e8: stur            w16, [x0, #0xf]
+    // 0x8141ec: ldur            x1, [fp, #-0x30]
+    // 0x8141f0: StoreField: r0->field_13 = r1
+    //     0x8141f0: stur            w1, [x0, #0x13]
+    // 0x8141f4: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    //     0x8141f4: ldr             x16, [PP, #0x78]  ; [pp+0x78] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    // 0x8141f8: ArrayStore: r0[0] = r16  ; List_4
+    //     0x8141f8: stur            w16, [x0, #0x17]
+    // 0x8141fc: str             x0, [SP]
+    // 0x814200: r0 = _interpolate()
+    //     0x814200: bl              #0x238b48  ; [dart:core] _StringBase::_interpolate
+    // 0x814204: mov             x1, x0
+    // 0x814208: r0 = call 0x2a9c7c
+    //     0x814208: bl              #0x2a9c7c
+    // 0x81420c: ldur            x0, [fp, #-0x30]
+    // 0x814210: stur            x0, [fp, #-0x30]
+    // 0x814214: r0 = call 0x777770
+    //     0x814214: bl              #0x777770
+    // 0x814218: ldur            x0, [fp, #-0x30]
+    // 0x81421c: b               #0x814260
+    // 0x814220: sub             SP, fp, #0x38
+    // 0x814224: stur            x0, [fp, #-0x30]
+    // 0x814228: r1 = Null
+    //     0x814228: mov             x1, NULL
+    // 0x81422c: r2 = 6
+    //     0x81422c: movz            x2, #0x6
+    // 0x814230: r0 = AllocateArray()
+    //     0x814230: bl              #0x8130e8  ; AllocateArrayStub
+    // 0x814234: r16 = "`shared_preferences_android` threw an error: "
+    //     0x814234: ldr             x16, [PP, #0x88]  ; [pp+0x88] "`shared_preferences_android` threw an error: "
+    // 0x814238: StoreField: r0->field_f = r16
+    //     0x814238: stur            w16, [x0, #0xf]
+    // 0x81423c: ldur            x1, [fp, #-0x30]
+    // 0x814240: StoreField: r0->field_13 = r1
+    //     0x814240: stur            w1, [x0, #0x13]
+    // 0x814244: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    //     0x814244: ldr             x16, [PP, #0x78]  ; [pp+0x78] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    // 0x814248: ArrayStore: r0[0] = r16  ; List_4
+    //     0x814248: stur            w16, [x0, #0x17]
+    // 0x81424c: str             x0, [SP]
+    // 0x814250: r0 = _interpolate()
+    //     0x814250: bl              #0x238b48  ; [dart:core] _StringBase::_interpolate
+    // 0x814254: mov             x1, x0
+    // 0x814258: r0 = call 0x2a9c7c
+    //     0x814258: bl              #0x2a9c7c
+    // 0x81425c: ldur            x0, [fp, #-0x30]
+    // 0x814260: stur            x0, [fp, #-0x30]
+    // 0x814264: r0 = call 0x777678
+    //     0x814264: bl              #0x777678
+    // 0x814268: ldur            x0, [fp, #-0x30]
+    // 0x81426c: b               #0x8142b0
+    // 0x814270: sub             SP, fp, #0x38
+    // 0x814274: stur            x0, [fp, #-0x30]
+    // 0x814278: r1 = Null
+    //     0x814278: mov             x1, NULL
+    // 0x81427c: r2 = 6
+    //     0x81427c: movz            x2, #0x6
+    // 0x814280: r0 = AllocateArray()
+    //     0x814280: bl              #0x8130e8  ; AllocateArrayStub
+    // 0x814284: r16 = "`sqflite_android` threw an error: "
+    //     0x814284: ldr             x16, [PP, #0x90]  ; [pp+0x90] "`sqflite_android` threw an error: "
+    // 0x814288: StoreField: r0->field_f = r16
+    //     0x814288: stur            w16, [x0, #0xf]
+    // 0x81428c: ldur            x1, [fp, #-0x30]
+    // 0x814290: StoreField: r0->field_13 = r1
+    //     0x814290: stur            w1, [x0, #0x13]
+    // 0x814294: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    //     0x814294: ldr             x16, [PP, #0x78]  ; [pp+0x78] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    // 0x814298: ArrayStore: r0[0] = r16  ; List_4
+    //     0x814298: stur            w16, [x0, #0x17]
+    // 0x81429c: str             x0, [SP]
+    // 0x8142a0: r0 = _interpolate()
+    //     0x8142a0: bl              #0x238b48  ; [dart:core] _StringBase::_interpolate
+    // 0x8142a4: mov             x1, x0
+    // 0x8142a8: r0 = call 0x2a9c7c
+    //     0x8142a8: bl              #0x2a9c7c
+    // 0x8142ac: ldur            x0, [fp, #-0x30]
+    // 0x8142b0: stur            x0, [fp, #-0x30]
+    // 0x8142b4: r0 = call 0x777540
+    //     0x8142b4: bl              #0x777540
+    // 0x8142b8: b               #0x8142f8
+    // 0x8142bc: sub             SP, fp, #0x38
+    // 0x8142c0: stur            x0, [fp, #-0x30]
+    // 0x8142c4: r1 = Null
+    //     0x8142c4: mov             x1, NULL
+    // 0x8142c8: r2 = 6
+    //     0x8142c8: movz            x2, #0x6
+    // 0x8142cc: r0 = AllocateArray()
+    //     0x8142cc: bl              #0x8130e8  ; AllocateArrayStub
+    // 0x8142d0: r16 = "`url_launcher_android` threw an error: "
+    //     0x8142d0: ldr             x16, [PP, #0x98]  ; [pp+0x98] "`url_launcher_android` threw an error: "
+    // 0x8142d4: StoreField: r0->field_f = r16
+    //     0x8142d4: stur            w16, [x0, #0xf]
+    // 0x8142d8: ldur            x1, [fp, #-0x30]
+    // 0x8142dc: StoreField: r0->field_13 = r1
+    //     0x8142dc: stur            w1, [x0, #0x13]
+    // 0x8142e0: r16 = ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    //     0x8142e0: ldr             x16, [PP, #0x78]  ; [pp+0x78] ". The app may not function as expected until you remove this plugin from pubspec.yaml"
+    // 0x8142e4: ArrayStore: r0[0] = r16  ; List_4
+    //     0x8142e4: stur            w16, [x0, #0x17]
+    // 0x8142e8: str             x0, [SP]
+    // 0x8142ec: r0 = _interpolate()
+    //     0x8142ec: bl              #0x238b48  ; [dart:core] _StringBase::_interpolate
+    // 0x8142f0: mov             x1, x0
+    // 0x8142f4: r0 = call 0x2a9c7c
+    //     0x8142f4: bl              #0x2a9c7c
+    // 0x8142f8: r0 = Null
+    //     0x8142f8: mov             x0, NULL
+    // 0x8142fc: LeaveFrame
+    //     0x8142fc: mov             SP, fp
+    //     0x814300: ldp             fp, lr, [SP], #0x10
+    // 0x814304: ret
+    //     0x814304: ret             
+    // 0x814308: r0 = StackOverflowSharedWithoutFPURegs()
+    //     0x814308: bl              #0x8131f0  ; StackOverflowSharedWithoutFPURegsStub
+    // 0x81430c: b               #0x814174
   }
 }
