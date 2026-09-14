@@ -33,4 +33,5 @@ jobs:
           cp full.log blutter_out/ 2>/dev/null || true
           git add blutter_out/
           git commit -m 'blutter run [skip ci]' || echo 'no changes'
-          git push
+          git pull --rebase origin main || true
+          git push || (sleep 10 && git pull --rebase origin main && git push)
