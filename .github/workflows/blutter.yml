@@ -15,16 +15,17 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential cmake ninja-build pkg-config libicu-dev libcapstone-dev python3 python3-requests git clang
-      - name: Run blutter
+      - name: Run blutter (log to file)
         run: |
           cd blutter
-          python3 blutter.py ../analysis ../out --rebuild 2>&1 | tail -40
+          (python3 blutter.py ../analysis ../out --rebuild > ../blutter_run.log 2>&1) || true
       - name: Commit output back
         run: |
           git config user.email 'actions@github.com'
           git config user.name 'github-actions'
           mkdir -p blutter_out
           cp -r out/* blutter_out/ 2>/dev/null || true
+          cp blutter_run.log blutter_out/ 2>/dev/null || true
           git add blutter_out/
           git commit -m 'blutter output [skip ci]' || echo 'no changes'
           git push
