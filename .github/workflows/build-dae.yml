@@ -1,0 +1,20 @@
+name: build-dae
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: Checkout dae source
+        uses: actions/checkout@v4
+        with:
+          repository: ejfkdev/dae
+          path: dae
+      - name: Install toolchain
+        run: sudo apt-get update && sudo apt-get install -y build-essential pkg-config libclang-dev cmake
+      - name: Build dae (release)
+        run: cd dae && cargo build --release --bin dae
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: dae-linux-arm64
+          path: dae/target/release/dae
