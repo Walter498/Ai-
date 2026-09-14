@@ -1,5 +1,7 @@
 name: build-dae
 on: [push, workflow_dispatch]
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-24.04-arm
@@ -9,12 +11,17 @@ jobs:
         with:
           repository: ejfkdev/dae
           path: dae
-      - name: Install toolchain
-        run: sudo apt-get update && sudo apt-get install -y build-essential pkg-config libclang-dev cmake
       - name: Build dae (release)
-        run: cd dae && cargo build --release --bin dae
-      - name: Upload binary
-        uses: actions/upload-artifact@v4
-        with:
-          name: dae-linux-arm64
-          path: dae/target/release/dae
+        run: |
+          sudo apt-get update && sudo apt-get install -y build-essential
+          cd dae && cargo build --release --bin dae
+      - name: Commit binary back to repo
+        run: |
+          git config user.email 'actions@github.com'
+          git config user.name 'github-actions'
+          mkdir -p dist
+          cp dae/target/release/dae dist/dae-linux-arm64
+          chmod +x dist/dae-linux-arm64
+          git add dist/
+          git commit -m 'dae linux-arm64 binary' || echo 'no changes'
+          git push
