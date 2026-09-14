@@ -11,21 +11,26 @@ jobs:
         with:
           repository: worawit/blutter
           path: blutter
-      - name: Install deps
+      - name: Install deps (log to file)
         run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential cmake ninja-build pkg-config libicu-dev libcapstone-dev python3 python3-requests python3-pip git clang && pip3 install --break-system-packages pyelftools capstone requests
+          {
+            sudo apt-get update
+            sudo apt-get install -y build-essential cmake ninja-build pkg-config libicu-dev libcapstone-dev python3 python3-requests python3-pip git clang
+            pip3 install --break-system-packages pyelftools capstone requests
+            python3 -c "import elftools; print('pyelftools OK')"
+          } > install.log 2>&1 || true
       - name: Run blutter (log to file)
         run: |
           cd blutter
           (python3 blutter.py ../analysis ../out --rebuild > ../blutter_run.log 2>&1) || true
       - name: Commit output back
+        if: always()
         run: |
           git config user.email 'actions@github.com'
           git config user.name 'github-actions'
           mkdir -p blutter_out
           cp -r out/* blutter_out/ 2>/dev/null || true
-          cp blutter_run.log blutter_out/ 2>/dev/null || true
+          cp blutter_run.log install.log blutter_out/ 2>/dev/null || true
           git add blutter_out/
           git commit -m 'blutter output [skip ci]' || echo 'no changes'
           git push
