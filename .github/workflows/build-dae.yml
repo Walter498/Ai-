@@ -6,6 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-24.04-arm
     steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
       - name: Checkout dae source
         uses: actions/checkout@v4
         with:
@@ -23,5 +25,5 @@ jobs:
           cp dae/target/release/dae dist/dae-linux-arm64
           chmod +x dist/dae-linux-arm64
           git add dist/
-          git commit -m 'dae linux-arm64 binary' || echo 'no changes'
+          git commit -m 'dae linux-arm64 binary [skip ci]' || echo 'no changes'
           git push
