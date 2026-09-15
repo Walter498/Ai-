@@ -328,7 +328,7 @@ class :: {
     //     0x818a68: add             x16, PP, #8, lsl #12  ; [pp+0x8820] TypeArguments: <({String name, wz? options, String Xrb, SendPort Kzf})>
     //     0x818a6c: ldr             x16, [x16, #0x820]
     // 0x818a70: r30 = Closure: (({String name, wz? options, String Xrb, SendPort Kzf})) => void from Function '_Jzf@800286499': static.
-    //     0x818a70: add             lr, PP, #8, lsl #12  ; [pp+0x8828] Closure: (({String name, wz? options, String Xrb, SendPort Kzf})) => void from Function '_Jzf@800286499': static. (0xffca02d827fc)
+    //     0x818a70: add             lr, PP, #8, lsl #12  ; [pp+0x8828] Closure: (({String name, wz? options, String Xrb, SendPort Kzf})) => void from Function '_Jzf@800286499': static. (0xffa3563827fc)
     //     0x818a74: ldr             lr, [lr, #0x828]
     // 0x818a78: stp             lr, x16, [SP, #0x10]
     // 0x818a7c: ldur            x16, [fp, #-0xb0]

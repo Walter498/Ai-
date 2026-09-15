@@ -287,7 +287,7 @@ class dw extends ew {
     //     0x81a0d0: add             x16, PP, #9, lsl #12  ; [pp+0x9728] TypeArguments: <_iw>
     //     0x81a0d4: ldr             x16, [x16, #0x728]
     // 0x81a0d8: r30 = Closure: (_iw) => Future<void> from Function 'start': static.
-    //     0x81a0d8: add             lr, PP, #9, lsl #12  ; [pp+0x9730] Closure: (_iw) => Future<void> from Function 'start': static. (0xffca02d7fdfc)
+    //     0x81a0d8: add             lr, PP, #9, lsl #12  ; [pp+0x9730] Closure: (_iw) => Future<void> from Function 'start': static. (0xffa35637fdfc)
     //     0x81a0dc: ldr             lr, [lr, #0x730]
     // 0x81a0e0: stp             lr, x16, [SP, #0x10]
     // 0x81a0e4: ldur            x16, [fp, #-0x38]
